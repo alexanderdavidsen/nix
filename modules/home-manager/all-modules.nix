@@ -25,7 +25,7 @@
   ./k9s.nix
   ./kitty.nix
   ./kvantum.nix
-  ./lazygit.nix
+  # ./lazygit.nix
   ./newsboat.nix
   ./mako.nix
   ./micro.nix
