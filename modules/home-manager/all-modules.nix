@@ -17,7 +17,7 @@
   ./gh-dash.nix
   ./gitui.nix
   ./glamour.nix
-  ./gtk.nix
+  # ./gtk.nix
   ./helix.nix
   ./hyprland.nix
   ./hyprlock.nix
