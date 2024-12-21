@@ -14,7 +14,7 @@ let
 
   # NOTE: On MacOS specifically, k9s expects its configuration to be in
   # `~/Library/Application Support` when not using XDG
-  enableXdgConfig = !pkgs.stdenv.hostPlatform.isDarwin || config.xdg.enable;
+  enableXdgConfig = !pkgs.stdenv.hostPlatform.isDarwin || (config.xdg or { enable = false; }).enable;
 
   themeName = "catppuccin-${cfg.flavor}" + lib.optionalString cfg.transparent "-transparent";
   themeFile = "${themeName}.yaml";
